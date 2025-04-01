@@ -33,7 +33,8 @@ class OSSUtil:
             endpoint_url=self.S3_ENDPOINT_URL,
             aws_access_key_id=self.S3_ACCESS_KEY_ID,
             aws_secret_access_key=self.S3_SECRET_ACCESS_KEY,
-            config=Config(signature_version='s3v4')  # 使用S3兼容签名版本
+            config=Config(signature_version='s3v4'),
+            region_name='oss-cn-hangzhou'  # 添加阿里云OSS地区，根据实际区域更改
         )
 
     def compress_image_to_webp(self, image_data, quality=85):
