@@ -3,10 +3,11 @@ pyppeteer
 fastapi[all]
 uvicorn
 python-dotenv
-groq
 boto3
 datetime
 requests
 Pillow
 sentencepiece
+google-generativeai
 transformers
+oss2

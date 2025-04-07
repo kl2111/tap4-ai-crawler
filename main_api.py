@@ -7,10 +7,10 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, Header, BackgroundTasks, HTTPException
 from pydantic import BaseModel
 
-from website_crawler import WebsitCrawler
+from website_crawler import WebsiteCrawler
 
 app = FastAPI()
-website_crawler = WebsitCrawler()
+website_crawler = WebsiteCrawler()
 load_dotenv()
 system_auth_secret = os.getenv('AUTH_SECRET')
 
