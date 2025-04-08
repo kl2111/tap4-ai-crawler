@@ -23,3 +23,6 @@ env/
 # IDE配置
 .vscode/
 .idea/
+.env
+.env
+env
