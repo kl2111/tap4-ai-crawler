@@ -6,7 +6,6 @@ WORKDIR /app
 COPY requirements.txt /app/
 COPY weiruanyahei.ttf /app/
 COPY util/* /app/util/
-COPY .env /app/
 COPY *.py /app/
 
 # 1.2 安装python依赖
@@ -23,7 +22,6 @@ COPY --from=builder /app/weiruanyahei.ttf /usr/share/fonts/chinese/
 # 2.2 复制执行所需的文件
 COPY --from=builder /app/dependencies /app/dependencies
 COPY --from=builder  /app/util/* /app/util/
-COPY --from=builder  /app/.env /app/
 COPY --from=builder  /app/*.py /app/
 
 # 2.3 安装依赖
