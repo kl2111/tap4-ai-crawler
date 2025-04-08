@@ -46,4 +46,4 @@ ENV PYTHONPATH=/app/dependencies
 
 # 2.7 运行脚本
 # 启动 main_api.py，并将输出重定向到日志文件
-CMD uvicorn main_api:app --host 0.0.0.0 --port 8040 --workers 4
+CMD ["uvicorn", "main_api:app", "--host", "0.0.0.0", "--port", "8040"]
