@@ -3,9 +3,14 @@ venv/
 
 # 环境配置文件
 .env
+.env.local
+env/
+
+# 不忽略示例配置
+!.env.example
 
 # Python缓存文件
-__pycache__/
+**__pycache__**/
 *.py[cod]
 *.class
 
